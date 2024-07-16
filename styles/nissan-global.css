@@ -1,4 +1,3 @@
-
 main {
     margin-top: 0;
 }
@@ -7,11 +6,11 @@ header {
     height: unset;
 }
 
-header nav .section > div {
+header nav .section>div {
     max-width: unset;
     margin: unset;
 
-    & > ul > li {
+    &>ul>li {
         font-size: var(--body-font-size-xs);
     }
 }
@@ -103,9 +102,9 @@ header nav .section > div {
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto auto;
         grid-template-areas:
-        "price price price price price"
-        "title elec engine range batt"
-        "title elecDesc engineDesc rangeDesc battDesc";
+            "price price price price price"
+            "title elec engine range batt"
+            "title elecDesc engineDesc rangeDesc battDesc";
         column-gap: 0;
         row-gap: 0;
         justify-items: center;
@@ -184,6 +183,12 @@ header nav .section > div {
             align-self: start;
         }
     }
+
+    & .hero.grid-four-clm {
+        & .hero-desc-wrapper {
+            grid-template-columns: 3fr 2fr 2fr 2fr;
+        }
+    }
 }
 
 
@@ -193,7 +198,7 @@ footer .footer {
     }
 
     & .heading-list .columns.block {
-        & > div {
+        &>div {
             display: flex;
             flex-direction: row;
             align-items: start;
@@ -209,7 +214,7 @@ footer .footer {
             text-transform: uppercase;
             line-height: 2.75rem;
 
-            & + ul {
+            &+ul {
                 margin: 20px 0 0;
                 list-style: none;
                 padding: 0;
@@ -217,22 +222,22 @@ footer .footer {
         }
 
         & ul {
-            & > li {
+            &>li {
                 font-size: 12px;
                 line-height: 2.75rem;
             }
         }
     }
 
-    & .social-links-4 .columns.block > div > div {
+    & .social-links-4 .columns.block>div>div {
 
-        &:nth-child(4) > ul {
+        &:nth-child(4)>ul {
             display: flex;
             flex-direction: row;
             align-items: start;
             gap: 10px;
 
-            & > li {
+            &>li {
                 background: #fff;
                 border-radius: 50%;
                 padding: 5px;
@@ -240,7 +245,7 @@ footer .footer {
                 justify-content: center;
                 align-items: center;
 
-                & > span {
+                &>span {
                     width: 18px;
                     height: 18px;
                     line-height: 0
@@ -252,7 +257,7 @@ footer .footer {
     & .two-column-between .columns.block {
         margin: 30px 0 20px;
 
-        & > div {
+        &>div {
             display: flex;
             justify-content: space-between;
         }
@@ -269,14 +274,14 @@ footer .footer {
                 flex-direction: column;
             }
 
-            & > li {
+            &>li {
                 font-weight: lighter;
             }
         }
     }
 
-    & .col-copyright-2-4 .columns.block > div > div:nth-child(2) {
-        & ul > li:nth-child(4) {
+    & .col-copyright-2-4 .columns.block>div>div:nth-child(2) {
+        & ul>li:nth-child(4) {
             font-weight: bold;
         }
     }
@@ -284,7 +289,7 @@ footer .footer {
 
 .nissan-single-block {
 
-    & > .columns-wrapper {
+    &>.columns-wrapper {
         max-width: 1500px;
         padding-bottom: 100px;
         padding-top: 100px;
@@ -311,7 +316,7 @@ footer .footer {
             font-family: var(--type-light-font-family);
         }
 
-        & .columns-2-cols > div {
+        & .columns-2-cols>div {
             gap: 64px;
         }
     }
@@ -319,7 +324,10 @@ footer .footer {
 
 a.button {
     &.primary {
-        &:link, &:visited, &:hover {
+
+        &:link,
+        &:visited,
+        &:hover {
             background: #000;
             order: 0;
             padding: 12px 30px;
@@ -334,8 +342,12 @@ a.button {
             line-height: 24px;
         }
     }
+
     &.secondary {
-        &:link, &:visited, &:hover {
+
+        &:link,
+        &:visited,
+        &:hover {
             font-family: "Nissan Bold", "Nissan Regular", Verdana, Arial, sans-serif;
             font-size: 1.75rem;
             font-weight: 700;
@@ -350,7 +362,7 @@ a.button {
 
             text-decoration: none;
 
-            & > .icon {
+            &>.icon {
                 width: 48px;
                 height: 48px;
             }
@@ -365,7 +377,8 @@ main .section.nissan-offer-section {
     padding-bottom: 120px;
     box-sizing: border-box;
 
-    & .default-content-wrapper, & .offer-wrapper {
+    & .default-content-wrapper,
+    & .offer-wrapper {
         max-width: 1500px;
         padding-left: 0;
         padding-right: 0;
@@ -373,7 +386,7 @@ main .section.nissan-offer-section {
     }
 
 
-    & > div {
+    &>div {
         max-width: 1500px;
         width: 100%;
         margin: auto;
@@ -451,9 +464,11 @@ main .section.nissan-faq-block {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
     & .accordion-item-label {
         border-color: #020a0d;
-        & > p {
+
+        &>p {
             font-family: "Nissan Bold", Verdana, Arial, sans-serif;
             font-weight: 700;
             font-size: 16px;
@@ -463,9 +478,11 @@ main .section.nissan-faq-block {
         }
     }
 
-    & .accordion details[open] .accordion-item-body, & .accordion-item-body {
+    & .accordion details[open] .accordion-item-body,
+    & .accordion-item-body {
         background-color: transparent;
-        & > p {
+
+        &>p {
             font-family: "Nissan Light", Verdana, Arial, sans-serif;
             font-size: 16px;
             font-weight: 300;
@@ -489,7 +506,4 @@ body.no-scroll {
     color: #ffffff;
 }
 
-@media (width < 768px) {
-}
-
-
+@media (width < 768px) {}
