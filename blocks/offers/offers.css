@@ -54,7 +54,7 @@
             }
 
             & .offer-detail-model {
-                display: block;
+                display: none;
 
 
                 & > h5{

@@ -100,7 +100,7 @@ header nav .section > div {
 .hero-container.nissan-hero-content {
     & .hero-desc-wrapper {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
         grid-template-rows: auto auto;
         grid-template-areas:
         "price price price price price"
