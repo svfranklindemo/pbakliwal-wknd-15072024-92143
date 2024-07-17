@@ -69,7 +69,7 @@ header nav[aria-expanded='true'] {
 
 @media (width >= 600px) {
   header nav {
-    padding: 0 20px;
+    padding: 0 60px;
   }
 }
 
@@ -208,6 +208,7 @@ header nav .nav-brand a {
 header nav .nav-brand img {
   width: 120px;
   height: auto;
+  filter: invert(1);
 }
 
 /* sections */
